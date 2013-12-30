@@ -34,15 +34,16 @@ void test_serial_plot()
 			pitch++;
 		else
 			pitch = -2;
-
 		if (yaw<180)
 			yaw += 2;
 		else
 			yaw = -180;
-        printf("Roll,%d ,Pitch,%d,Yaw,%d\r\n",roll,pitch,yaw);
-        puts("CH1 3036.0(0.0),CH2 3036.0(0.0),CH3 2074.0(800.0),CH4 3100.0(0.0),CH5 1931.0(On)\r\n");
-        puts("PID Roll,0.0,PID PITCH,0.0,PID YAW,1.0\r\n");
-        puts("MOTOR 1,798.0,MOTOR 2,802.0,MOTOR 3,798.0,MOTOR 4,802.0\r\n");
+        printf("{'Roll':'%d','Pitch':'%d','Yaw':'%d'",roll,pitch,yaw);
+        puts(",'CH1':['3036.0','0.0'],'CH2':['3036.0','0.0'],'CH3':['2074.0','800.0'],'CH4':['3100.0', '0.0'],'CH5':['1931.0','On']");
+        puts(",'PID Roll':'0.0','PID PITCH':'0.0','PID YAW':'1.0'");
+        puts(",'MOTOR 1':'798.0','MOTOR 2':'802.0','MOTOR 3':'798.0','MOTOR 4':'802.0'");
+	puts(",'Acc x':'5','Acc y':'-5','Acc z':'-3'");
+	puts(",'Gyro x':'-2','Gyro y':'-20','Gyro z':'-50'}/r/n");
 	
 	}
 }
