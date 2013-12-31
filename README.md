@@ -40,6 +40,4 @@ Make sure your st-link is correctly connected.
 
 `make flash`
 
-If you see the message that confirm flash successful, you can reset the MCU and receive the message from it.
-
-If you want to change the format of message, you will find the function `void test_serial_plot()`. This function actually is the task which do tansmit message.
+If you see the message that confirm flash successful, you can reset the MCU and receive the message from it. If you want to change the format of message, you will find the function `void test_serial_plot()`. This function actually is the task which do tansmit message.
