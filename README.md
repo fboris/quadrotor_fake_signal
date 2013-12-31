@@ -45,7 +45,12 @@ If you see the message that confirm flash successful, you can reset the MCU and 
 ##Glossary
 
 Roll, Pitch, Yaw: the attitude measure from AHRS
+
 CH1, CH2, CH3, CH4, CH5: the radio control signal measure by PWM input capturing
+
 MOTOR 1~4: the PWM CCR
+
 Acc x,y,z: the acceleration measure from accelerometer
+
 Gyo x,y,z: the angular velocity meausre from gyroscope
+
